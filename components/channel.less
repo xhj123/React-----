@@ -1,0 +1,64 @@
+.channelModel {
+  position: fixed;
+  width: 100%;
+  height: 10rem;
+  bottom: -10rem;
+  background: #ffffff;
+  border-top-left-radius: 0.24rem;
+  border-top-right-radius: 0.24rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s linear;
+  .musicType {
+    height: 0.84rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.02rem rgba(0,0,0,0.2) solid;
+    span {
+      margin-right: 0.4rem;
+      font-weight: bold;
+    }
+    .borderBottom {
+      color: red;
+      border-bottom: 0.04rem red solid;
+    }
+    .close {
+      position: absolute;
+      top: 0.4rem;
+      right: 0.4rem;
+      width: 0.2rem;
+      height: 0.2rem;
+      background-image: url('../src/assets/images/close.svg');
+      background-repeat: no-repeat;
+    }
+  }
+  .groupAll {
+    flex: 1;
+    display: flex;
+    .groupLeft {
+      width: 1.4rem;
+      border-right:1px rgba(0,0,0,0.2) solid ;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        margin-top: 0.2rem;
+      }
+      .selectIndex {
+        color: red;
+      }
+    }
+    .groupRight {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-left: 0.4rem;
+        margin-top: 0.2rem;
+      }
+    }
+  }
+}

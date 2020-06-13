@@ -1,0 +1,69 @@
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  .control--progress {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .control--progress--end {
+      color: #615f5f;
+    }
+    .control--progress--line {
+      margin: 0 0.4rem;
+      width: 75%;
+      background: #615f5f;
+      height: 0.04rem;
+      position: relative;
+      div {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  .control-button {
+    margin-top: 0.3rem;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .littleTip {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .collectTip {
+        margin-bottom: 0.1rem;
+        width: 0.4rem;
+        height: 0.4rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../src/assets/images/collect.svg')
+      }
+      .moreTip {
+        margin-bottom: 0.1rem;
+        width: 0.4rem;
+        height: 0.4rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../src/assets/images/more.svg')
+      }
+    }
+
+    .audioPause {
+      width: 0.9rem;
+      height: 0.9rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('../src/assets/images/pause.svg')
+    }
+
+    .audioPlay {
+      background-image: url('../src/assets/images/play.svg')
+    }
+
+
+  }
+}
